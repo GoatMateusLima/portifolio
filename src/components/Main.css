@@ -1,0 +1,20 @@
+.main{
+    display: grid;
+    background-color: #000000;
+    grid-template-columns: 3fr 350px;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+figure img {
+    border-radius: 100px;
+}
+
+
+.coluna_direita{
+    background-color: white;
+    width: 350px;
+}
