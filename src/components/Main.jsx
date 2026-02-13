@@ -1,19 +1,27 @@
 import './Main.css'
+import minhaFoto from '../assets/img/mateus.png';
 
 function Main() {
-    const Perfil = "https://media.licdn.com/dms/image/v2/D4D03AQHS0jDL9ZOteA/profile-displayphoto-scale_200_200/B4DZsDRmmnKIAk-/0/1765286507651?e=1770249600&v=beta&t=dSv02Ur5VuV_NxWYlsGd25kDDf9tGbHkl2Lm3g86U4k";
+    
     return (
         <main className='main'>
-            <section className='corpo_esquerda'>
-                sjdjsajjasjdjj
-            </section>
-            <aside className='coluna_direita'>
-                <figure>
-                    <img src={Perfil} alt="perfil" />
+            <section class="row container-info" id="about">
+                <figure class="perfil">
+                    <img src={minhaFoto} alt="Foto de Mateus Lima Bispo" />
                 </figure>
-                <h2>Mateus Lima Bispo</h2>
-            </aside>
-            
+                <div class="collum info" >
+                    <h2 class="name">Mateus Lima Bispo</h2>
+                    <p class="description"></p>
+                    <div class="row">
+                        <a href="" class="button primary circle linkedin t" ></a>
+                        <a href="" class="button segundary circle gmail t"></a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
 
         </main>
     )
