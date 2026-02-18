@@ -1,28 +1,28 @@
-import './Header.css'
-import './Geometric.css'
+import './Header.css';
+import Logo from './logo';
+
 function Header() {
-
+  
   return (
-    < header className="header" >
-      <section className='containerHeader'>
-        <section className='titulo'><div className='fundo-titulo'><h1>LIMA-DEV</h1></div></section>
-        <nav>
-          <ul>
+     
+    < header >
+      <section className='contentHeader backgroundDark'>
+        <section className='logo' >
+          <Logo/>
+        </section>
+        <nav className='contentNav'>
+          <ul className='linkNav'>
             <li><a href="">Sobre mim</a></li>
-            <li><a href="">Tecnologias</a></li>
-            <li><a href="">Idiomas</a></li>
-            <li><a href="">Projetos</a></li>
-            <li><a href="">Contato</a></li>
-
             <li><a href="">Formação Acadêmica</a></li>
-            <li><a href="">GitHub</a></li>
-            <li><a href="">Linkedin</a></li>
-            <li><a href="">Youtube</a></li>
-            <li><a href="">Curriculo</a></li>
-
-
+            <li><a href="">Competências Técnicas</a></li>
+            <li><a href="">Projetos</a></li>
+            <li><a href="">Certificaçõess</a></li>
           </ul>
+          <button className='bcSite '>
+            <p>l</p>
+          </button>
         </nav>
+        
       </section>
 
     </header>
