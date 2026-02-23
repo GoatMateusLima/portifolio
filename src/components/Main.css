@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
 
 .main{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: rgb(26, 23, 23);
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -24,7 +25,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 768px;
+    height: 502px;
+    min-height: 100%;
     z-index: 0;
     overflow: hidden;
     pointer-events: none;
@@ -40,7 +42,7 @@
 /* ── Orb 1: roxo/índigo — canto superior ESQUERDO ── */
 .cir2:nth-child(1) {
     width: 750px;
-    height: 750px;
+    height: 502px;
     top: -400px;
     left: -200px;
     background: radial-gradient(circle at center,
@@ -54,7 +56,7 @@
 /* ── Orb 2: azul elétrico — canto superior DIREITO ── */
 .cir2:nth-child(2) {
     width: 800px;
-    height: 800px;
+    height: 502px;
     right: -250px;
     bottom: -450px;
     background: radial-gradient(circle at center,
@@ -68,7 +70,7 @@
 /* ── Orb 3: brilho sutil no centro/baixo para profundidade ── */
 .cir2:nth-child(3) {
     width: 600px;
-    height: 600px;
+    height: 502px;
     left: 50%;
     transform: translateX(-50%);
     background: radial-gradient(circle at center,
@@ -86,8 +88,9 @@
     justify-content: space-evenly;
     z-index: 1;
     width: 100%;
-    height: 522px;
-    min-height: 100%;
+    height: 502px;
+    overflow: hidden;
+     
     
 }
 
@@ -111,10 +114,9 @@
     width: 502px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    gap: 30px;
-    height: 522px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 502px;
 }
 
 .row > li {
@@ -145,7 +147,8 @@
     font-style: oblique;
 }
 .name > span{
-    color: #df2f03;
+    
+    color: #440a96;
 }
 
 
@@ -155,7 +158,7 @@
     font-size: 25px ;
 }
 .area > span{
-    color: #440a96;
+    color: #df2f03;
 }
 
 .buttons{
@@ -186,4 +189,75 @@
 .cv{
     background:  #df2f03;
 
+}
+
+.section2{
+    width: 100%;
+    height: 522px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* ── Seção Parallex ── */
+
+.container-parallex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+.parallex{
+    background-color: #df2f03;
+    background-image: url(pixel-art-style-floral-garden-illustration.jpg);
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px;
+    max-width: 1200px;
+    max-height: 400px;
+    height: 400px;
+    box-shadow:rgba(0, 0, 0, 0.61) inset 90px 0px 10px, rgba(0, 0, 0, 0.61) inset -90px 0px 10px;
+    background-position: center; 
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+
+
+.mascoteParallex{
+    position: absolute;
+
+    
+    left: 50%;
+    
+
+    transform: translate(-50%);
+
+    width: 200px;
+    height: 200px;
+
+    z-index: 2;
+}
+
+
+
+
+.portal{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+
+    z-index: 1;
+    
+}
+
+.container-portal{
+    background-color: tomato;
 }

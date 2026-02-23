@@ -1,5 +1,7 @@
 import './Main.css'
 import minhaFoto from '../assets/img/mateus.png';
+import mascote from '../assets/img/mascots/lima-dev/LLR.png';
+import portal from './portal.png';
 
 function Main() {
 
@@ -10,7 +12,10 @@ function Main() {
                 <div className='cir2'></div>
                 <div className='cir2'></div>
             </section>
+
             <section className="secPrimary" id="about">
+
+
                 <figure class="perfil">
                     <img src={minhaFoto} alt="Foto de Mateus Lima Bispo" />
                 </figure>
@@ -30,11 +35,22 @@ function Main() {
                         <a className="button cv">Baixar CV</a>
                     </div>
                 </div>
-                
+
 
             </section>
-            <div></div>
-            <section className='Section2'>
+            <div className='container-parallex'>
+                <div className="parallex">
+                    <div className="container-portal" >
+                        <figure>
+                            <img src={portal} alt="" className='portal' />
+                        </figure>
+                    </div>
+                    <figure>
+                        <img src={mascote} alt="Mascote do portfólio" className='mascoteParallex' />
+                    </figure>
+                </div>
+            </div>
+            <section className="section2">
                 <aside>
                     <div>
                         <li><a href="">Ver projetos</a></li>

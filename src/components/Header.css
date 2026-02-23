@@ -11,7 +11,7 @@
 
 header {
     background-color:rgba(23, 26, 31, 0.384);
-    height: 40px;
+    height: 60px;
     width: 100%;
     z-index: 2;
    
@@ -20,12 +20,13 @@ header {
 
 .contentHeader {
     display: flex;
-    
-    background-color:rgba(20, 13, 13, 0);
+    background-color:rgba(20, 13, 13, 0.753);
     width: 100%;
-    height: 40px;
-        backdrop-filter: Saturate(200%) blur(10px);
-    z-index: 2;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: Saturate(500%) blur(10px);
+    z-index: 6;
    position: fixed;
 }
 
@@ -38,7 +39,7 @@ header {
     height: 100%;
     filter: blur(10px);
     background-color: rgba(121, 49, 7, 0);
-    z-index: 2; /* Fica atrás do conteúdo */
+    z-index: 6; /* Fica atrás do conteúdo */
 }
 
 
